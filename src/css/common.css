@@ -16,3 +16,18 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.conteiner {
+  text-align: center;
+  padding: 300px;
+}
+
+.conteiner-button {
+  width: 200px;
+  height: 40px;
+  color: antiquewhite;
+  background-color: blue;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
