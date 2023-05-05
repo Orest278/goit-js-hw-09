@@ -11,7 +11,7 @@ const dataMinutes = document.querySelector(`[data-minutes]`);
 const dataSeconds = document.querySelector(`[data-seconds]`);
 
 buttonStart.disabled = true;
-const timertId = null;
+let timerId = null;
 
 const options = {
   enableTime: true,
@@ -35,7 +35,7 @@ flatpickr(inputEl, options);
 buttonStart.addEventListener(`click`, onButtonClick);
 
 function onButtonClick() {
-  timertId = setInterval(() => {
+  timerId = setInterval(() => {
           updateTime();
     }, 1000);
     inputEl.disabled = true;
@@ -71,7 +71,7 @@ function updateTime() {
   const deltaTime = selectedTime - currentTime;
 
   if (deltaTime <= 0) {
-    clearInterval(timertId);
+    clearInterval(timerId);
     inputEl.disabled = false;
     return;
   }
