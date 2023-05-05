@@ -31,3 +31,14 @@ img {
   font-size: 15px;
   cursor: pointer;
 }
+
+.conteiner-button:hover,
+.conteiner-button:focus {
+  color: black;
+  background-color: blueviolet;
+}
+
+.conteiner-button:disabled {
+  background-color: blueviolet;
+  cursor: not-allowed;
+}

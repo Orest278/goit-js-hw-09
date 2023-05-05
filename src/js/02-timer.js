@@ -35,8 +35,8 @@ flatpickr(inputEl, options);
 buttonStart.addEventListener(`click`, onButtonClick);
 
 function onButtonClick() {
-    timerId = setInterval(() => {
-        updateTime();
+  timerId = setInterval(() => {
+          updateTime();
     }, 1000);
     inputEl.disabled = true;
     buttonStart.disabled = true;
@@ -71,7 +71,7 @@ function updateTime() {
   const deltaTime = selectedTime - currentTime;
 
   if (deltaTime <= 0) {
-    clearInterval(timeoutId);
+    clearInterval(timerId);
     inputEl.disabled = false;
     return;
   }

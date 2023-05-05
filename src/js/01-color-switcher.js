@@ -14,7 +14,7 @@ function startBtnClick() {
     if (!intervalId) {
         intervalId = setInterval(randomColor, 1000);
         startBtb.disabled = true;
-    }
+    }    
 };
 
 function stopBtnClick() {
