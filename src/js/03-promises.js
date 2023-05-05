@@ -16,9 +16,9 @@ form.addEventListener(`submit`, function (e) {
   })
   .catch(({ position, delay }) => {
     Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
-  }); 
+  }, delay); 
+    delay += step;
   }
-  delay += step;
 });
 
   function createPromise(position, delay) {
